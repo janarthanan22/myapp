@@ -1,0 +1,18 @@
+package com.mobile.controller;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mobile.entity.Mobile;
+
+@RestController
+public class MobileController {
+	
+	@GetMapping("/getall")
+	public List<Mobile> getDetails() {
+		
+	}
+
+}

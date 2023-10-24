@@ -1,0 +1,25 @@
+package com.logg4jj;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.product.ProductApplication;
+
+@SpringBootApplication
+public class Logg4jjApplication {
+	static Logger log=Logger.getLogger(Logg4jjApplication.class);
+
+	public static void main(String[] args) {
+		
+		SpringApplication.run(Logg4jjApplication.class, args);
+		BasicConfigurator.configure();
+		log.info("Information");
+		log.error("Error");
+		log.warn("warning");
+		log.fatal("Critical error");
+		log.debug("Debugging");
+	}
+
+}

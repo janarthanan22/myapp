@@ -1,0 +1,12 @@
+package com.product;
+
+import com.product.controller.ProductController;
+
+public class GetAll {
+	ProductController pc=new ProductController();
+	
+	public void testGet() {
+		pc.getall();
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.product;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProductApplication {
+	
+	//static Logger log=Logger.getLogger(ProductApplication.class);
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProductApplication.class, args);
+		
+		
+		//BasicConfigurator.configure();
+//		PropertyConfigurator.configure("log4j.properties");
+//		log.info("Information");
+//		log.error("Error");
+//		log.warn("warning");
+//		log.fatal("Critical error");
+//		log.debug("Debugging");
+	}
+
+}

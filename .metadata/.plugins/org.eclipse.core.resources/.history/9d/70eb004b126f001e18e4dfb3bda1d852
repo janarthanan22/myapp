@@ -1,0 +1,5 @@
+package com.junitproject;
+
+public class TestCalculator {
+
+}

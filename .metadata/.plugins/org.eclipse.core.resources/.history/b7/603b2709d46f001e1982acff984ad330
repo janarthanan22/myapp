@@ -1,0 +1,12 @@
+package com.devapps;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DevappsController {
+	
+	public String getname() {
+		return "Hello world";
+	}
+
+}

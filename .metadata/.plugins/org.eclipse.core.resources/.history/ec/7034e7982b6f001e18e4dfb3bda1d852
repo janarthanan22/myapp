@@ -1,0 +1,13 @@
+package com.logg4jj;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Logg4jjApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Logg4jjApplication.class, args);
+	}
+
+}

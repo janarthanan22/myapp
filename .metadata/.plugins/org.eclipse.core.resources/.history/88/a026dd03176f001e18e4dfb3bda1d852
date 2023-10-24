@@ -1,0 +1,47 @@
+package com.junitproject;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+public class AssertProgram {
+	
+	@Test
+	public void testAsserstEquals() {
+		assertEquals(10,10);
+	}
+	
+	@Test
+	public void testTrue() {
+		boolean a=10>5;
+		assertTrue(a);
+	}
+	@Test
+	public void testFalse() {
+		boolean a=10>5;
+		assertFalse(a);
+	}
+	
+	@Test
+	public void testSame() {
+		assertSame("jana","jana");
+	}
+	
+	@Test
+	public void testNotSame() {
+		assertNotSame("jana","jana");
+	}
+	
+	@Test
+	public void testArray() {
+		int[]a= {26,9,926};
+		int[]b= {26,9,926};
+		assertArrayEquals(a,b);
+	}
+
+}

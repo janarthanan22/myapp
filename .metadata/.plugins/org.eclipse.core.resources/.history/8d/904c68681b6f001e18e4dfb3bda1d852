@@ -1,0 +1,61 @@
+package com.junitproject;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNotSame;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+
+public class AssertProgram {
+	
+	MaxNumber m=new MaxNumber();
+	int a[]= {10,20,44};
+	@Test
+	public void testMax() {
+		assertEquals(m.findMax(a),10);
+		
+	}
+	
+	@Test
+	public void testAsserstEquals() {
+		assertEquals(10,10);
+	}
+	
+	@Test
+	public void testAsserstNotEquals() {
+		assertNotEquals(12,10);
+	}
+	
+	@Test
+	public void testTrue() {
+		boolean a=10>5;
+		assertTrue(a);
+	}
+	@Test
+	public void testFalse() {
+		boolean a=10<5;
+		assertFalse(a);
+	}
+	
+	@Test
+	public void testSame() {
+		assertSame("jana","jana");
+	}
+	
+	@Test
+	public void testNotSame() {
+		assertNotSame("jarna","jana");
+	}
+	
+	@Test
+	public void testArray() {
+		int[]a= {26,9,926};
+		int[]b= {26,9,926};
+		assertArrayEquals(a,b);
+	}
+
+}

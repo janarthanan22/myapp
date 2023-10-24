@@ -1,0 +1,40 @@
+package com.junitproject;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+
+public class TestCalculator {
+	Calculator cc=new Calculator();
+	
+	@Before
+	public void print() {
+		System.out.println("hello");
+	}
+	
+	@Test
+	public void testAdd() {
+		System.out.println(cc.add(10, 20));
+	}
+	
+	@Test
+	public void testDiv() {
+		cc.div();
+	}
+	
+	@Test
+	public void testSub() {
+		System.out.println(cc.sub());
+	}
+	
+	
+	@Test
+	public void testMul() {
+		cc.multi(10, 20);
+	}
+	@After
+	public void printBye() {
+		System.out.println("byee");
+	}
+
+}
